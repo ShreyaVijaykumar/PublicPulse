@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            color: black;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            background-color: rgba(26, 26, 46, 0.9);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* User Info */
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .user-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #00aaff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #00aaff;
+        }
+
+        /* Copyright */
+        .copyright {
+            color: #aaaaaa;
+            font-size: 14px;
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+            height: 100vh;
+            background-color: rgba(20, 20, 40, 0.9);
+        }
+
+        .news-tile {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 170, 255, 0.3);
+        }
+
+        /* Predefined News Images */
+        .news-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Vote Buttons */
+        .vote-buttons {
+            margin-top: 10px;
+        }
+
+        .vote-buttons button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .vote-buttons button:hover {
+            transform: scale(1.2);
+        }
+
+        .comment-box {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .dashboard-title {
+            font-size: 24px;
+            color: #00aaff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-info">
+            <div class="user-icon">👤</div>
+            <span>Anonymous User</span>
+        </div>
+        <p class="dashboard-title">DASHBOARD</p>
+        <nav class="menu">
+            <a href="#">GLOBAL</a>
+            <a href="#">BHARAT</a>
+            <a href="#">TRUST SCORE</a>
+            <a href="#">ABOUT US</a>
+        </nav>
+        <div class="copyright">Copyrights © 2025</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Crime News Tile -->
+        <div class="news-tile">
+            <h3>Rise of Cyber Fraudlent</h3>
+            <img class="news-image" src="https://img.freepik.com/free-photo/thief-wearing-black-hat-obscuring-face-was-arrested-gray_1150-15166.jpg?t=st=1741893785~exp=1741897385~hmac=87accb574e57df2b7fd01fb441d341d530f01cce3b0e8722a5d5d513536351b0&w=1380" alt="Crime Scene">
+            <p>A shocking case of cyber fraud has surfaced in India where criminals used AI voice cloning to impersonate government officials, scamming people out of crores of rupees. Authorities have launched an investigation to track down the perpetrators.</p>
+            <div class="vote-buttons">
+                <button>❤️</button>
+                <button>😊</button>
+                <button>😲</button>
+                <button>😡</button>
+                <button>😢</button>
+            </div>
+            <input type="text" class="comment-box" maxlength="80" placeholder="Write a comment (Max 15 words)">
+        </div>
+
+          <div class="news-tile">
+            <h3>Delhi's air quality improves to moderate</h3>
+            <img class="news-image" src="https://img.freepik.com/free-photo/aerial-view-city-fog_1153-5422.jpg?t=st=1741893706~exp=1741897306~hmac=e30507778fff5782468a6780f5d1a4154a360dc4697b5700764a53cd0f1c531b&w=1380" alt="Crime Scene">
+            <p>Several factors contribute to Delhi's poor air quality, including industrial emissions, traffic congestion, construction activities, and the burning of agricultural waste in surrounding areas. </p>
+            <div class="vote-buttons">
+                <button>❤️</button>
+                <button>😊</button>
+                <button>😲</button>
+                <button>😡</button>
+                <button>😢</button>
+            </div>
+            <input type="text" class="comment-box" maxlength="80" placeholder="Write a comment (Max 15 words)">
+        </div>
+
+    </div>
+
+</body>
+</html>

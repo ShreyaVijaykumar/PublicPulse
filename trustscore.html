@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Score Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/global-data-science-technology-computer-programming-abstract_31965-11269.jpg?w=1800') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        canvas {
+            max-width: 300px; 
+            margin: auto;
+        }
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Trust Score Dashboard - 2024</h2>
+        <canvas id="trustScoreChart"></canvas>
+        <p>Submit your trust score (every 3 months):</p>
+        <input type="number" id="trustScoreInput" min="0" max="100" placeholder="0-100">
+        <button id="submitBtn" onclick="submitTrustScore()">Submit</button>
+        <p id="status"></p>
+    </div>
+    
+    <script>
+        let trustScores = {"Jan": 75, "Apr": 80, "Jul": 70, "Oct": 85};
+        let months = Object.keys(trustScores);
+        let scores = Object.values(trustScores);
+        let chart;
+
+        function renderChart() {
+            const ctx = document.getElementById('trustScoreChart').getContext('2d');
+            if (chart) chart.destroy();
+            chart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        data: scores,
+                        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0']
+                    }]
+                }
+            });
+        }
+
+        function submitTrustScore() {
+            let newScore = document.getElementById('trustScoreInput').value;
+            if (newScore === "" || newScore < 0 || newScore > 100) {
+                alert("Please enter a valid score (0-100)");
+                return;
+            }
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('status').innerText = "Processing... Please wait 1 week";
+            
+            setTimeout(() => {
+                let nextMonth = months[(months.length) % 4];
+                trustScores[nextMonth] = parseInt(newScore);
+                scores = Object.values(trustScores);
+                renderChart();
+                document.getElementById('status').innerText = "Trust score updated for " + nextMonth;
+                document.getElementById('submitBtn').disabled = false;
+            }, 5000); // Simulating 1-week wait (shortened to 5s for demo)
+        }
+
+        renderChart();
+    </script>
+</body>
+</html>

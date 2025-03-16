@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            color: black;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            height: 100vh;
+            background-color: rgba(26, 26, 46, 0.9);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* User Info */
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .user-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #00aaff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #00aaff;
+        }
+
+        /* Copyright */
+        .copyright {
+            color: #aaaaaa;
+            font-size: 14px;
+            text-align: center;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+            height: 100vh;
+            background-color: rgba(10, 10, 30, 0.9);
+        }
+
+        .news-tile {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 170, 255, 0.3);
+        }
+
+        /* Predefined News Images */
+        .news-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Vote Buttons */
+        .vote-buttons {
+            margin-top: 10px;
+        }
+
+        .vote-buttons button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .vote-buttons button:hover {
+            transform: scale(1.2);
+        }
+
+        .comment-box {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Dashboard Title */
+        .dashboard-title {
+            color: #00aaff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-info">
+            <div class="user-icon">👤</div>
+            <span>Anonymous User</span>
+        </div>
+        <p class="dashboard-title">Dashboard</p>
+        <nav class="menu">
+            <a href="#">GLOBAL</a>
+            <a href="#">BHARAT</a>
+            <a href="#">TRUST SCORE</a>
+            <a href="#">ABOUT US</a>
+        </nav>
+        <div class="copyright">Copyrights © 2025</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- News Tile 1 -->
+        <div class="news-tile">
+            <h3>Global AI Regulations</h3>
+            <img class="news-image" src="https://img.freepik.com/premium-photo/futuristic-city-digital-network-technology-background_31965-23678.jpg?w=1200" alt="AI Regulations">
+            <p>Countries worldwide are collaborating to set new AI safety regulations. The initiative aims to prevent bias and misuse while ensuring fair decision-making by AI systems. Experts believe this will shape the future of ethical AI usage. Leading nations like the USA, UK, and India are taking proactive steps in defining robust AI policies. The discussions revolve around transparency, accountability, and the role of AI in governance.</p>
+            <div class="vote-buttons">
+                <button>❤️</button>
+                <button>😊</button>
+                <button>😲</button>
+                <button>😡</button>
+                <button>😢</button>
+            </div>
+            <input type="text" class="comment-box" maxlength="80" placeholder="Write a comment (Max 15 words)">
+        </div>
+
+        <!-- News Tile 2 -->
+        <div class="news-tile">
+            <h3>New Digital Identity Policy in India</h3>
+            <img class="news-image" src="https://img.freepik.com/premium-photo/blockchain-technology-concept-global-network-security_31965-11060.jpg?w=1200" alt="Digital Identity">
+            <p>India is rolling out an advanced digital identity verification system linked to Aadhaar. This move aims to enhance security, reduce fraud, and streamline government services. Citizens will experience faster and more secure authentication processes. The policy ensures better data protection and privacy safeguards. Government officials emphasize that this will boost financial inclusion and digital accessibility.</p>
+            <div class="vote-buttons">
+                <button>❤️</button>
+                <button>😊</button>
+                <button>😲</button>
+                <button>😡</button>
+                <button>😢</button>
+            </div>
+            <input type="text" class="comment-box" maxlength="80" placeholder="Write a comment (Max 15 words)">
+        </div>
+    </div>
+
+</body>
+</html>

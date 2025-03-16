@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/global-data-science-technology-computer-programming-abstract_31965-11269.jpg?w=1800') no-repeat center center/cover;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+            padding-right: 40px;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            height: 60vh;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #1a393b;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .resend {
+            background: none;
+            border: none;
+            color: #1a393b;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <label for="aadhar">AADHAR</label>
+            <input type="text" id="aadhar" maxlength="12" placeholder="XXXXXXXXXXXX" oninput="this.value = this.value.replace(/\D/g, '').slice(0,12)">
+            <label for="otp">OTP</label>
+            <input type="text" id="otp" maxlength="6" placeholder="Enter OTP">
+            <button type="submit">Login</button>
+            <button type="button" class="resend">Resend SMS</button>
+        </form>
+    </div>
+</body>
+</html>
