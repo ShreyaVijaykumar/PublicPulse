@@ -1,0 +1,13 @@
+#-------------- pip installation of sentiment analysis model in google colab --------------
+#METHOD 1 - NORMAL INSTALLATION IN OTHER FRAMEWORKS AND ENVIRONMENTS
+pip install vaderSentiment matplotlib
+#METHOD 2 - INSTALLATION IN GOOGLE COLAB
+!pip install vaderSentiment matplotlib
+
+
+
+#-------------- #pip installation of pdf generator module in google colab --------------
+#METHOD 1 - NORMAL INSTALLATION IN OTHER FRAMEWORKS AND ENVIRONMENTS
+pip install fpdf
+#METHOD 2 - INSTALLATION IN GOOGLE COLAB
+!pip install fpdf
