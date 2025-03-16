@@ -53,18 +53,14 @@ Public Pulse is an **AI-driven app** that ensures transparency, accountability, 
 
 ## 📜 License.
 
-Public Pulse - Proprietary License
-Copyright (c) 2025 [Shreya Vijaykumar]
+Public Pulse - This project is proprietary and **cannot** be used, modified, or distributed without explicit permission from the owner.  
+See the [LICENSE](./LICENSE) file for more details.
 
-This software is the property of [Shreya Vijaykumar] and is protected under copyright law.
-Redistribution, modification, and use of this software, in part or in whole, are 
-strictly prohibited without explicit written permission from the owner.
-
-Unauthorized use, copying, or distribution of this software may result in legal action.
-
+Copyright (c) 2025 [Shreya Vijaykumar](https://github.com/ShreyaVijaykumar)
 
 ---
 
 💡 *Built to foster AI transparency and public trust in governance and to allign with Sustainable Development Goals!*
 
-*THESE CODES ARE THE IMPORTANT ALGORITHMS AND UI THAT ARE USED IN THIS APP, THESE ALGORITHMS ARE JUST TESTED AND TRAINED WITH SAMPLE DATAS*
+*THESE CODES ARE THE IMPORTANT ALGORITHMS AND UI THAT ARE USED IN THIS APP.
+THESE ALGORITHMS ARE JUST TESTED AND TRAINED WITH SAMPLE DATAS.*
