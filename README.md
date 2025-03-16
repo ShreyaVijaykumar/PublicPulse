@@ -66,3 +66,5 @@ Unauthorized use, copying, or distribution of this software may result in legal 
 ---
 
 💡 *Built to foster AI transparency and public trust in governance and to allign with Sustainable Development Goals!*
+
+*THESE CODES ARE THE IMPORTANT ALGORITHMS AND UI THAT ARE USED IN THIS APP, THESE ALGORITHMS ARE JUST TESTED AND TRAINED WITH SAMPLE DATAS*
