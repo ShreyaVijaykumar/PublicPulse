@@ -36,6 +36,20 @@ Public Pulse is an **AI-driven app** that ensures transparency, accountability, 
    ```sh
    pip install -r requirements.txt
    ```
+## 💻 UI Flow
+
+publicpulse/
+- ├── templates/
+- │   ├── login.html
+- │   ├── dashboard_india.html      ** Represents Bharat's events and crimes
+- │   ├── dashboard.html            ** Represents Global events and crimes
+- │   ├── users.html                ** Can pull request and appeal here
+- │   ├── trustscore.html
+- ├── static/
+- │   ├── style.css
+- ├── requiremnts.txt
+- ├── README.md
+
 
 ## 📊 Usage
 
