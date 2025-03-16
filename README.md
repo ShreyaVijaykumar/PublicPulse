@@ -1,4 +1,4 @@
-# PublicPulse
+# 🏛️ PublicPulse
 
 Public Pulse is an **AI-driven app** that ensures transparency, accountability, and fairness in AI-driven governance and decision-making. It evaluates public trust in government posts and individual user credibility based on participation and engagement metrics. Moreover it recommends government to take action or respond for what users have raised or showed their opinions and concerns by giving a report which summarizes the results of the public's opinions with and without bias so we can calculate a proper credibility score, an effective decision is made by government with respect to citizen's choice using credibility score. Here admins are Government and AI panelist (includes AI and representatives from NITI AAYOG) and the users are citizens of India.
 
