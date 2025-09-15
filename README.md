@@ -1,10 +1,13 @@
 # 🏛️ PublicPulse
 
-Public Pulse is an **AI-driven app** that ensures transparency, accountability, and fairness in AI-driven governance and decision-making. It evaluates public trust in government posts and individual user credibility based on participation and engagement metrics. Moreover it recommends government to take action or respond for what users have raised or showed their opinions and concerns by giving a report which summarizes the results of the public's opinions with and without bias so we can calculate a proper credibility score, an effective decision is made by government with respect to citizen's choice using credibility score. Here admins are Government and AI panelist (includes AI and representatives from NITI AAYOG) and the users are citizens of India.
+Public Pulse is an AI-driven platform designed to enhance transparency, accountability, and fairness in government decision-making. It evaluates public trust in government communications and measures individual citizen credibility based on participation, engagement, and the reliability of their input. The app also generates actionable reports for the government, summarizing public opinions with and without bias to calculate accurate credibility scores, ensuring that decisions reflect citizens’ preferences.
+
+Admins: Government authorities and AI panelists (AI + representatives from NITI AAYOG)
+Users: Citizens of India
 
 ## 🏆 Accomplishments - IEEE IDEATHON 2025 WINNER
 
-This idea and project was submitted to IEEE CommBattle Ideathon 2025, it not just got selected in 2 rounds but also bagged the First prize in the finals and was awarded with cash prize.
+IEEE CommBattle Ideathon 2025 Winner – Public Pulse was selected in multiple rounds and secured the first prize, receiving recognition and a cash award for its innovative approach to AI-driven governance.
 
 ## 📌 Features
 
